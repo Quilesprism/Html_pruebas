@@ -1,0 +1,19 @@
+body{
+    display: grid; 
+    place-items: center;
+    height: 100vh;
+    background: aqua;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #fff;
+}
+.init {
+    position: relative;
+    width: 360px;
+    height: 300px;
+    max-width: 600px;
+    padding: 20px;
+    border-radius: 10px;
+    background: #15171d;
+    text-align: center;
+    font-size: .8rem;
+}

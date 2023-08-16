@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Formulario WEB basico</h1>
+    <form action="servidor-ejemplo.com" method="post">
+        <fieldset>
+          <legend>Información del usuario</legend>
+        </br>
+          <div class="form-control">
+            <label for="name">Nombre:</label>
+            <input type="text" placeholder="Nombre de usuario..."/>
+          </div>
+        </br>
+          <div class="form-control">
+            <label for="email">Direccion e-mail</label>
+            <input type="email"/>
+          </div>
+        </br>
+          <div class="form-control">
+            <Label for="select">Ciudad:</Label>
+            <select>
+                <option value="HTML">Selecciona ciudad</option>
+                <option value="Bogota">Bogota</option>
+                <option value="Medellin">Medellin</option>
+          </select>
+          </div>
+        </br>
+          <div class="form-control">
+            <label>Aficiones:</label> </br>
+            <input type="checkbox" id="check"/>
+            <label for="check">Deportes</label></br>
+            <input type="checkbox" id="check"/>
+            <label for="check">Coches</label></br>
+            <input type="checkbox" id="check"/>
+            <label for="check">Musica</label></br>
+          </div>
+        </br>
+        <div class="form-control">
+            <label>Sexo</label></br>
+            <input type="radio" id="check"/>
+            <label for="check">Masculino</label></br>
+            <input type="radio" id="check"/>
+            <label for="check">Femenino</label></br>
+        </div>
+        </br>
+          <input type="submit" value="Enviar formulario" class="submit-btn" />
+          <input type="submit" value="Limpiar formulario" class="submit-btn" />
+        </fieldset>
+  </form>
+</body>
+</html>
