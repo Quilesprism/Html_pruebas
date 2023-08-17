@@ -1,19 +1,112 @@
-body{
-    display: grid; 
-    place-items: center;
-    height: 100vh;
-    background: aqua;
-    font-family: Arial, Helvetica, sans-serif;
-    color: #fff;
+
+body, h1, h2, h3, p {
+    margin: 0;
+    padding: 0;
 }
-.init {
-    position: relative;
-    width: 360px;
-    height: 300px;
-    max-width: 600px;
-    padding: 20px;
-    border-radius: 10px;
-    background: #15171d;
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+}
+
+.inicio {
     text-align: center;
-    font-size: .8rem;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin: 20px auto;
+    max-width: 600px;
+}
+.image {
+    background-image: url('https://w7.pngwing.com/pngs/1005/979/png-transparent-cartoon-red-bull-cartoon-animals-red-bull-bullfighting-thumbnail.png'); 
+    background-repeat: no-repeat;
+    background-position: left center;
+    padding-left: 60px; 
+    display: inline-block; 
+}
+
+.login__heading {
+    color: darkolivegreen;
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+.login_heading {
+    color: darkolivegreen;
+    font-size: 1rem;
+    margin-bottom: 20px;
+}
+p {
+    color:darkolivegreen;
+}
+.form_group {
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.form_input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+.form_label {
+    position: absolute;
+    top: 50%;
+    left: 10px;
+    transform: translateY(-50%);
+    pointer-events: none;
+    color: darkolivegreen;
+    font-size: 1rem;
+    transition: 0.2s ease-out;
+}
+
+.form_input:focus + .form_label,
+.form_input:not(:placeholder-shown) + .form_label {
+    top: 0;
+    font-size: 0.8rem;
+    color: darkolivegreen;
+}
+
+.form_button {
+    display: block;
+    text-align: center;
+    background-color: darkolivegreen;
+    color: #fff;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+.link-info {
+    color: #007bff;
+}
+
+.pie {
+    text-align: center;
+    background-color: #fff;
+    margin-top: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    max-width: 600px;
+    text-align: center;
+    padding: 20px;
+    margin: 20px auto;
+    color: darkolivegreen
+}
+@media screen and (max-width: 600px) {
+    .inicio {
+        padding: 10px;
+    }
+    .login__heading {
+        font-size: 2rem;
+    }
+    .login_heading {
+        font-size: 0.9rem;
+    }
+    .form_label {
+        font-size: 0.8rem;
+    }
 }
